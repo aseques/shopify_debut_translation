@@ -1,362 +1,493 @@
 {
   "general": {
-    "accessibility": {
-      "skip_to_content": "Skip to content",
-      "close_modal": "Close (esc)",
-      "link_messages": {
-        "new_window": "Opens in a new window.",
-        "external": "Opens external website.",
-        "new_window_and_external": "Opens external website in a new window."
+    "404": {
+      "title": "Pàgina no trobada",
+      "subText": "Ho sentim, no vam poder trobar aquesta pàgina.",
+      "subtext": "Disculpa, pero no trobem aquesta pàgina."
+    },
+    "password_page": {
+      "opening_soon": "Obertura Pròximament",
+      "spread_the_word": "Fes Córrer la Veu:",
+      "login_form_heading": "Entrar a la botiga utilitzant contrasenya:",
+      "login_form_password_label": "Contrasenya",
+      "login_form_password_placeholder": "La teva contrasenya",
+      "login_form_submit": "Entrada",
+      "signup_form_heading": "Descobreix quan inaugurem:",
+      "signup_form_email_label": "Correu electrònic",
+      "signup_form_email_placeholder": "La seva adreça de correu electrònic",
+      "signup_form_submit": "Enviar",
+      "signup_form_success": "Et enviarem un correu electrònic abans d'inaugurar!",
+      "admin_link_html": "Ets el propietari de la botiga? <a href=\"\/admin\" class=\"text-link\"> Registra't aquí <\/a>",
+      "password_link": "Entrar usant contrasenya",
+      "powered_by_shopify_html": "Aquesta botiga estarà impulsada per {{ Shopify }} Traducció per: Connexio.cat"
+    },
+    "pagination": {
+      "previous": "Anterior",
+      "next": "Següent",
+      "summary": "Pàgina {{ current_page }} de {{ pages }}",
+      "current_page": "Pàgina {{ current }} de {{ total }}"
+    },
+    "breadcrumbs": {
+      "home": "Inici",
+      "products": "Productes"
+    },
+    "search": {
+      "placeholder": "Busqueu a la nostra botiga",
+      "no_results_title": "Recerca sense resultats",
+      "no_results_html": "La seva recerca de <strong> {{ search }} <\/strong> no ha tingut resultats. Proveu de cercar una altra cosa.",
+      "results_title": "Resultats de la cerca",
+      "empty_search_message": "La cerca no pot ser buida",
+      "title": "Cerqueu a la nostra web",
+      "submit": "Envia",
+      "close": "Tanca cerca",
+      "heading": {
+        "one": "Resultat de la cerca",
+        "other": "Resultats de la cerca"
       }
     },
     "meta": {
-      "tags": "Tagged \"{{ tags }}\"",
-      "page": "Page {{ page }}"
-    },
-    "404": {
-      "title": "404 Page Not Found",
-      "subtext": "The page you requested does not exist.",
-      "link": "Continue shopping"
-    },
-    "pagination": {
-      "previous": "Previous page",
-      "next": "Next page",
-      "current_page": "Page {{ current }} of {{ total }}"
-    },
-    "password_page": {
-      "opening_soon": "Opening Soon",
-      "login_form_heading": "Enter store using password",
-      "login_form_password_label": "Password",
-      "login_form_password_placeholder": "Your password",
-      "login_form_submit": "Enter",
-      "signup_form_email_label": "Email",
-      "signup_form_success": "We will send you an email right before we open!",
-      "admin_link_html": "Are you the store owner? <a href=\"\/admin\" class=\"text-link\">Log in here<\/a>",
-      "password_link": "Enter using password",
-      "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
+      "tagged": "etiquetat",
+      "page": "Pàgina"
     },
     "social": {
-      "share_on_facebook": "Share",
-      "share_on_twitter": "Tweet",
-      "share_on_pinterest": "Pin it",
+      "share_on_facebook": "Comparteix",
       "alt_text": {
-        "share_on_facebook": "Share on Facebook",
-        "share_on_twitter": "Tweet on Twitter",
-        "share_on_pinterest": "Pin on Pinterest"
-      }
-    },
-    "search": {
-      "no_results_html": "Please try a different search term or go back to the <a href=\"\/\">homepage<\/a>.",
-      "empty_search_message": "Search field cannot be empty",
-      "results_with_count": {
-        "one": "{{ count }} result for \"{{ terms }}\"",
-        "other": "{{ count }} results for \"{{ terms }}\""
+        "share_on_facebook": "Comparteix a facebook",
+        "share_on_twitter": "Comparteix a twitter",
+        "share_on_pinterest": "Pin a Pinterest"
       },
-      "title": "Search our site",
-      "placeholder": "Search",
-      "submit": "Submit",
-      "close": "Close search",
-      "heading": {
-        "one": "Search result",
-        "other": "Search results"
-      }
-    },
-    "newsletter_form": {
-      "newsletter_email": "Join our mailing list",
-      "email_placeholder": "Email address",
-      "confirmation": "Thanks for subscribing",
-      "submit": "Subscribe"
-    },
-    "filters": {
-      "show_more": "Show More",
-      "show_less": "Show Less"
-    },
-    "payment": {
-      "method": "Payment methods"
+      "share_on_twitter": "Comparteix",
+      "share_on_pinterest": "Pin it"
     }
   },
-  "sections": {
-    "slideshow": {
-      "next_slide": "Next slide",
-      "previous_slide": "Previous slide",
-      "pause_slideshow": "Pause slideshow",
-      "play_slideshow": "Play slideshow",
-      "play_video": "Play video",
-      "close_video": "Close video"
+  "layout": {
+    "header": {
+      "search": "Buscar",
+      "cart": "Cistella",
+      "menu": "Menú"
     },
-    "featured_product": {
-      "title": "Featured product",
-      "gallery_thumbnail_alt": "Load image into Gallery viewer, {{ imageAlt }}"
+    "customer": {
+      "login": "Entrada",
+      "or": "o",
+      "create_account": "Crear un compte",
+      "your_account": "El seu compte"
     },
-    "map": {
-      "address_error": "Error looking up that address",
-      "address_no_results": "No results for that address",
-      "address_query_limit_html": "You have exceeded the Google API usage limit. Consider upgrading to a <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Plan<\/a>.",
-      "auth_error_html": "There was a problem authenticating your Google Maps account.",
-      "section_heading": "Location"
-    }
-  },
-  "blogs": {
-    "article": {
-      "view_all": "View all",
-      "view_all_blogs": "View all blogs",
-      "all_topics": "All topics",
-      "by_author": "by {{ author }}",
-      "posted_in": "Posted in",
-      "read_more": "Read more",
-      "read_more_title": "Read more: {{ title }}",
-      "back_to_blog": "Back to {{ title }}",
-      "tags": "Tags"
-    },
-    "comments": {
-      "title": "Leave a comment",
-      "name": "Name",
-      "email": "Email",
-      "message": "Message",
-      "post": "Post comment",
-      "moderated": "Please note, comments must be approved before they are published",
-      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
-      "success": "Your comment was posted successfully! Thank you!",
-      "comments_with_count": {
-        "one": "{{ count }} comment",
-        "other": "{{ count }} comments"
-      }
-    }
-  },
-  "cart": {
-    "general": {
-      "title": "Your cart",
-      "note": "Add a note to your order",
-      "remove": "Remove",
-      "subtotal": "Subtotal",
-      "savings": "You're saving",
-      "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping calculated<\/a> at checkout",
-      "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
-      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping calculated<\/a> at checkout.",
-      "update": "Update",
-      "checkout": "Check out",
-      "empty": "Your cart is currently empty.",
-      "cookies_required": "Enable cookies to use the shopping cart",
-      "edit": "Edit",
-      "cancel": "Cancel",
-      "continue_shopping": "Continue shopping"
-    },
-    "label": {
-      "product": "Product",
-      "price": "Price",
-      "quantity": "Quantity",
-      "total": "Total"
+    "footer": {
+      "latest_news": "Últimes notícies",
+      "quick_links": "Enllaços ràpids",
+      "follow_us": "Segueix-nos",
+      "newsletter_title": "Butlletí",
+      "newsletter_email": "Adreça de correu electrònic",
+      "newsletter_submit": "Subscriure",
+      "copyright": "Drets d'autor",
+      "social": "{{ shop }} en {{ social_media }}",
+      "news": "{{ shop }} notícies"
     }
   },
   "collections": {
     "general": {
-      "view_all": "View all",
-      "view_all_label": "View all products in the {{ collection_name }} collection",
-      "no_matches": "Sorry, there are no products in this collection",
+      "browse": "Cerca:",
+      "all_items": "Tots els articles",
       "items_with_count": {
-        "one": "{{ count }} product",
-        "other": "{{ count }} products"
-      },
-      "collection_label": "Collection"
+        "one": "{{ count }} producte",
+        "other": "{{ count }} productes"
+      }
+    },
+    "product_item": {
+      "from_text_html": "<em> De <\/em> {{ price }}"
+    },
+    "list_collections": {
+      "product_collections": "Col·leccions de productes"
     },
     "sorting": {
-      "title": "Sort by",
-      "featured": "Featured",
-      "best_selling": "Best Selling",
-      "az": "Alphabetically, A-Z",
-      "za": "Alphabetically, Z-A",
-      "price_ascending": "Price, low to high",
-      "price_descending": "Price, high to low",
-      "date_descending": "Date, new to old",
-      "date_ascending": "Date, old to new",
-      "warning_message": "choosing a selection results in a full page refresh"
+      "title": "Ordenar per",
+      "featured": "Destacats",
+      "best_selling": "Més venuts",
+      "az": "Alfabèticament, A-Z",
+      "za": "Alfabèticament, Z-A",
+      "price_ascending": "Preu, menys a més",
+      "price_descending": "Preu, més a menys",
+      "date_descending": "Data, nou a antic",
+      "date_ascending": "Data, antic a nou"
+    }
+  },
+  "products": {
+    "general": {
+      "share_on_facebook": "Compartir",
+      "share_on_twitter": "Tuitejar",
+      "share_on_pinterest": "Fer pin",
+      "share_on_fancy": "Fancy",
+      "related_products": "Productes relacionats"
     },
-    "filters": {
-      "title_tags": "Filter by",
-      "all_tags": "All products"
+    "product": {
+      "sold_out_html": "Esgotat",
+      "surt": "Oferta",
+      "unavailable_html": "No disponible",
+      "quantity": "Quantitat",
+      "add_to_cart": "Afegeix a la cistella",
+      "sale": "Oferta",
+      "back_to_collection": "Torna a {{ title }} ",
+      "include_taxes": "Impostos inclosos."
+    },
+    "onboarding": {
+      "title": "Aquesta pàgina us mostrarà tots els productes de la seva botiga",
+      "subText": "No hi ha productes encara, però una vegada que comenci a afegir apareixeran aquí, independent si és que estan en una col·lecció.",
+      "add_product": "Afegir un producte",
+      "view_sample": "Veure un producte de mostra",
+      "example_title": "Exemple de títol de producte",
+      "subtext": "No hi ha productes encara, però una vegada que comenci l'addició d'ells es mostraran aquí independentment de si estan en una col·lecció."
+    },
+    "example_product": {
+      "title": "Exemple de producte",
+      "overlay_title": "Això és un exemple d'una pàgina de producte",
+      "subtext_html": "Afegir el teu propi producte per veure aquesta pàgina en acció i donar el primer pas en comandes de prova. Per consells sobre com escriure descripcions efectives visita <a href=\"http:\/\/www.shopify.com\/blog\/8211159-9-simple-ways-to-write-product-descriptions-that-sell?utm_source=default-theme&utm_medium=contextual&utm_campaign=default-theme-products-tooltips-experiment\" target = \"shopify_info\"> 9 maneres simples per escriure descripcions dels productes que venem. <\/a>",
+      "add_product": "Afegeix un producte",
+      "description_html": "Aquí és on es mostra la descripció del seu producte."
+    }
+  },
+  "blocs": {
+    "article": {
+      "posted_on_date": "Publicat a {{ date }}",
+      "comment_meta_html": "<strong> {{ author }} <\/strong> a {{ date }}"
+    },
+    "comments": {
+      "title": "Comentaris",
+      "form_title": "Deixar un comentari",
+      "name": "Nom",
+      "email": "Correu electrònic",
+      "message": "Comentari",
+      "post": "Afegeix un comentari",
+      "moderated": "Els comentaris han de ser aprovats abans d'aparèixer",
+      "success_moderated": "El seu comentari s'ha compartit amb èxit. Ha de ser aprovat pel propietari del bloc abans d'aparèixer.",
+      "success": "El seu comentari ha estat compartit amb èxit.",
+      "error": "No tots els camps han estat omplerts correctament",
+      "comments_with_count": {
+        "one": "{{ count }} comentari",
+        "other": "{{ count }} comentaris"
+      }
+    },
+    "sidebar": {
+      "recent_articles": "Articles recents",
+      "tags": "Etiquetes",
+      "all": "Tots"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "La seva cistella",
+      "remove": "Treure",
+      "noti": "Afegir instruccions especials a la seva comanda ...",
+      "subtotal": "Subtotal",
+      "additional_savings": "Estalvis addicionals",
+      "savings_html": "Està estalviant {{ price }}",
+      "taxes_extra": "Els codis de descompte, els costos d'enviament i els impostos s'afegeixen durant el pagament.",
+      "update": "Actualitzar",
+      "checkout": "Finalitzar comanda",
+      "empty": "La seva cistella actualment està buit.",
+      "note": "Afegir notes o instruccions a la comanda...",
+      "savings": "Esteu guardant",
+      "taxes_included_but_shipping_at_checkout": "Impostos inclosos i calculats al finalitzar la compra",
+      "taxes_included_and_shipping_policy_html": "Impostos inclosos, <a href=\"{{ link }}\">Enviament calculat<\/a> al finalitzar la compra",
+      "continue_shopping": "Continua comprant"
+    },
+    "label": {
+      "product": "Producte",
+      "price": "Preu",
+      "quantity": "Quantitat",
+      "total": "Total"
+    }
+  },
+  "home_page": {
+    "onboarding": {
+      "products_title": "No ha afegit productes encara",
+      "products_text_html": "Pren menys d'un minut <a href=\"\/admin\/products\"> afegir la seva primer producte <\/a> a la seva botiga. Assegureu-vos de afegir-lo a la col·lecció de <strong> {{  frontpage }} <\/strong> per a veure-ho en la pàgina d'inici. ",
+      "add_product": "Afegir un producte",
+      "view_sample": "Veure un exemple de producte",
+      "collections_title": "Gairebé a punt ...",
+      "collections_text_html": "Ara afegiu un producte a la col·lecció de <em> {{ frontpage }} <\/em> per a veure-ho en la pàgina d'inici.",
+      "add_collection": "Afegir a col·lecció",
+      "learn_collections": "Aprendre sobre col·leccions",
+      "example_product_title": "Exemple de producte destacat",
+      "example_product_text": "La seva botiga es veu una mica buida! Aquest marcador es mostrarà fins que afegiu seu primer producte.",
+      "PAGE_TITLE": "Com canviar aquesta secció",
+      "page_text": "Pot canviar el text d'aquesta àrea a l'editar la pàgina de en les seves pàgines d'administrador. També pot reemplaçar la pàgina de amb una altra pàgina al seu Configuració de temes.",
+      "edit_page": "Edita pàgina de ",
+      "view_settings": "Veure la configuració de temes",
+      "view_product": "Veure producte",
+      "page_title": "Com canviar aquesta secció"
+    },
+    "products": {
+      "view_product": "Veure producte"
     }
   },
   "contact": {
     "form": {
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone Number",
-      "message": "Message",
-      "submit": "Send",
-      "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
-      "error_heading": "Please adjust the following:"
+      "name": "Nom",
+      "email": "Correu electrònic",
+      "phone": "Número de telèfon",
+      "message": "Missatge",
+      "send": "Enviar",
+      "post_success": "Gràcies per contactar-nos. Li respondrem el més aviat possible.",
+      "post_error": "Ups, ho sentim. No vam poder enviar la seva consulta. Si us plau corregiu el següent i torni a enviar:",
+      "post_field_error_html": "El <strong> {{ field }} <\/strong> {{ error }}"
+    },
+    "placeholder": {
+      "name": "John Doe",
+      "email": "john@ejemplo.com",
+      "phone": "555-555-1234",
+      "message": "El seu missatge"
     }
   },
   "customer": {
+    "general": {
+      "or": "o"
+    },
     "account": {
-      "title": "My Account",
-      "details": "Account Details",
-      "view_addresses": "View Addresses",
-      "return": "Return to Account Details"
+      "title": "El meu compte",
+      "view_addresses": "Veure direccions",
+      "logout": "Tancar sessió"
     },
     "activate_account": {
-      "title": "Activate Account",
-      "subtext": "Create your password to activate your account.",
-      "password": "Password",
-      "password_confirm": "Confirm Password",
-      "submit": "Activate Account",
-      "cancel": "Decline Invitation"
+      "title": "Activar compte",
+      "subText": "Creu la contrasenya per activar el compte.",
+      "password": "Contrasenya",
+      "password_confirm": "Confirmar contrasenya",
+      "submit": "Activar compte",
+      "cancel": "Rebutjar invitació",
+      "subtext": "Crea la teva contrasenya per activar el compte."
     },
     "addresses": {
-      "title": "Your Addresses",
-      "default": "Default",
-      "add_new": "Add a New Address",
-      "edit_address": "Edit address",
-      "first_name": "First Name",
-      "last_name": "Last Name",
-      "company": "Company",
-      "address1": "Address1",
-      "address2": "Address2",
-      "city": "City",
-      "country": "Country",
-      "province": "Province",
-      "zip": "Postal\/Zip Code",
-      "phone": "Phone",
-      "set_default": "Set as default address",
-      "add": "Add Address",
-      "update": "Update Address",
+      "title": "Els seus direccions",
+      "default": "(Direcció per defecte)",
+      "add_new": "Afegir una nova direcció",
+      "first_name": "Nom",
+      "last_name": "Cognom",
+      "company": "Companyia",
+      "Address1": "Dirección1",
+      "address2": "Adreça2",
+      "city": "Ciutat",
+      "country": "País",
+      "province": "Província",
+      "zip": "Codi postal",
+      "phone": "Telèfon",
+      "set_default": "Fixar com a adreça per defecte?",
+      "add": "Afegir direcció",
+      "update": "Actualitzar direcció",
       "cancel": "Cancel",
-      "edit": "Edit",
-      "delete": "Delete",
-      "delete_confirm": "Are you sure you wish to delete this address?"
+      "edit": "Edita",
+      "delete": "Eliminar",
+      "address1": "Adreça1"
     },
     "login": {
-      "title": "Login",
-      "email": "Email",
-      "password": "Password",
-      "forgot_password": "Forgot your password?",
-      "sign_in": "Sign In",
-      "guest_title": "Continue as a guest",
-      "guest_continue": "Continue"
+      "title": "Entrada",
+      "email": "Correu electrònic",
+      "password": "Contrasenya",
+      "forgot_password": "Heu oblidat la contrasenya?",
+      "reset_password": "Restablir contrasenya.",
+      "reset_password_subtext": "Li enviarem un correu electrònic per restablir la contrasenya.",
+      "sign_in": "Registrar-se",
+      "guest_title": "Accés convidats",
+      "guest_continue": "Continuar com a convidat",
+      "cancel": "Cancel.lar",
+      "submit_recover": "Enviar"
     },
     "orders": {
-      "title": "Order History",
-      "order_number": "Order",
-      "date": "Date",
-      "payment_status": "Payment Status",
-      "fulfillment_status": "Fulfillment Status",
+      "order_number": "Comanda",
+      "date": "Data",
+      "payment_status": "Estat del pagament",
+      "fulfillment_status": "Estat de finalització",
       "total": "Total",
-      "none": "You haven't placed any orders yet."
+      "none": "No ha realitzat alguna comanda encara."
     },
     "order": {
-      "title": "Order {{ name }}",
-      "date": "Placed on {{ date }}",
-      "cancelled": "Order Cancelled on {{ date }}",
-      "cancelled_reason": "Reason: {{ reason }}",
-      "billing_address": "Billing Address",
-      "payment_status": "Payment Status",
-      "shipping_address": "Shipping Address",
-      "fulfillment_status": "Fulfillment Status",
-      "discount": "Discount",
-      "shipping": "Shipping",
-      "tax": "Tax",
-      "product": "Product",
+      "title": "Comanda {{ name }}",
+      "cancelled": "Comanda cancel·lat",
+      "cancelled_reason": "Motiu: {{ reason }}",
+      "billing_address": "Adreça de facturació",
+      "payment_status": "Estat del pagament",
+      "shipping_address": "Adreça d'enviament",
+      "fulfillment_status": "Estat de finalització",
+      "product": "Producte",
       "sku": "SKU",
-      "price": "Price",
-      "quantity": "Quantity",
+      "price": "Preu",
+      "quantity": "Quantitat",
       "total": "Total",
-      "fulfilled_at": "Fulfilled {{ date }}",
       "subtotal": "Subtotal",
-      "track_shipment": "Track shipment"
-    },
-    "recover_password": {
-      "title": "Reset your password",
-      "email": "Email",
-      "submit": "Submit",
-      "cancel": "Cancel",
-      "subtext": "We will send you an email to reset your password.",
-      "success": "We've sent you an email with a link to update your password."
+      "Fulfilled": "Conclosa"
     },
     "reset_password": {
-      "title": "Reset account password",
-      "subtext": "Enter a new password for {{ email }}",
-      "password": "Password",
-      "password_confirm": "Confirm Password",
-      "submit": "Reset Password"
+      "title": "Restablir contrasenya.",
+      "submit": "Restablir contrasenya",
+      "password": "Contrasenya",
+      "password_confirm": "Confirmar contrasenya"
     },
     "register": {
-      "title": "Create Account",
-      "first_name": "First Name",
-      "last_name": "Last Name",
-      "email": "Email",
-      "password": "Password",
-      "submit": "Create"
-    }
-  },
-  "homepage": {
-    "onboarding": {
-      "product_title": "Your product's name",
-      "product_description": "This area is used to describe your product’s details. Tell customers about the look, feel, and style of your product. Add details on color, materials used, sizing, and where it was made.",
-      "collection_title": "Your collection's name",
-      "blog_title": "Your post's title",
-      "blog_excerpt": "Your store hasn’t published any blog posts yet. A blog can be used to talk about new product launches, tips, or other news you want to share with your customers. You can check out Shopify’s ecommerce blog for inspiration and advice for your own store and blog.",
-      "blog_author": "Author name",
-      "no_content": "This section doesn’t currently include any content. Add content to this section using the sidebar."
-    }
-  },
-  "layout": {
-    "navigation": {
-      "search": "Search",
-      "expand": "expand",
-      "collapse": "collapse",
-      "menu": "Menu"
-    },
-    "cart": {
-      "title": "Cart",
-      "items_count": {
-        "one": "item",
-        "other": "items"
-      }
-    },
-    "customer": {
-      "account": "Account",
-      "log_out": "Log out",
-      "log_in": "Log in",
-      "create_account": "Create account"
-    },
-    "footer": {
-      "social_platform": "{{ name }} on {{ platform }}"
-    }
-  },
-  "products": {
-    "product": {
-      "regular_price": "Regular price",
-      "sold_out": "Sold out",
-      "unavailable": "Unavailable",
-      "on_sale": "Sale",
-      "sale_price": "Sale price",
-      "quantity": "Quantity",
-      "add_to_cart": "Add to cart",
-      "back_to_collection": "Back to {{ title }}",
-      "vendor": "Vendor",
-      "quantity_minimum_message": "Quantity must be 1 or more",
-      "include_taxes": "Tax included.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping calculated<\/a> at checkout."
+      "title": "Crear compte",
+      "first_name": "Nom",
+      "last_name": "Cognom",
+      "email": "Correu electrònic",
+      "password": "Contrasenya",
+      "submit": "Crear",
+      "cancel": "Tornar a la botiga"
     }
   },
   "gift_cards": {
     "issued": {
-      "title_html": "Here's your {{ value }} gift card for {{ shop }}!",
-      "subtext": "Your gift card",
-      "gift_card_code": "Gift card code",
-      "disabled": "Disabled",
-      "expired": "Expired on {{ expiry }}",
-      "active": "Expires on {{ expiry }}",
-      "redeem_html": "Use this code at checkout to redeem your {{ value }} gift card",
-      "shop_link": "Start shopping",
-      "print": "Print this gift card",
-      "remaining_html": "{{ balance }} left",
-      "add_to_apple_wallet": "Add to Apple Wallet",
-      "qr_image_alt": "QR code — scan to redeem gift card"
+      "title": "Aquí està la teva targeta de regal de {{ value }} per {{ shop }}!",
+      "subText": "Aquí està la seva targeta de regal!",
+      "disabled": "Desactivada",
+      "expired": "Va expirar a",
+      "active": "Expira el",
+      "redeem": "Utilitzeu aquest codi en acabar la comprar per bescanviar la seva targeta de regal",
+      "shop_link": "Començar a comprar",
+      "print": "Imprimir",
+      "left": "esquerra",
+      "subtext": "Aquí està la teva targeta de regal!"
     }
   },
-  "date_formats": {
-    "month_day_year": "%B %d, %Y"
+  "blogs": {
+    "article": {
+      "posted_on_date": "Publicat el {{ date }} ",
+      "comment_meta_html": "<strong>{{ author }}<\/strong> el {{ date }} "
+    },
+    "comments": {
+      "title": "Comentaris",
+      "form_title": "Deixa un comentari",
+      "name": "Nom",
+      "email": "Email",
+      "message": "Missatge",
+      "post": "Comentari",
+      "moderated": "Els comentaris han de ser revisats per ser publicats",
+      "success_moderated": "Be!!! publicat el teu comentari. Haurà de ser aprovat pel propietari del bloc abans de mostrar-se.",
+      "success": "Comentari publicat.",
+      "error": "Els camps no son correctes.",
+      "comments_with_count": {
+        "one": "{{ count }} comentari",
+        "other": "{{ count }} comentaris"
+      }
+    },
+    "sidebar": {
+      "recent_articles": "Articles recents",
+      "tags": "Etiquetes",
+      "all": "Tot"
+    }
+  },
+  "shopify": {
+    "sentence": {
+      "two_words_connector": "i",
+      "last_word_connector": ", i",
+      "words_connector": ","
+    },
+    "pagination": {
+      "previous": "Anterior",
+      "next": "Següent"
+    },
+    "links": {
+      "powered_by_shopify": "Fet amb Shopify i traduït per Connexio.cat",
+      "learn_more": "Llegir més"
+    },
+    "feed": {
+      "more": "Més"
+    },
+    "dates": {
+      "abbr_day_names": {
+        "sunday": "Dg",
+        "monday": "Dll",
+        "tuesday": "Dm",
+        "wednesday": "Di",
+        "thursday": "Dj",
+        "friday": "Dv",
+        "saturday": "Ds"
+      },
+      "day_names": {
+        "sunday": "Diumenge",
+        "monday": "Dilluns",
+        "tuesday": "Dimarts",
+        "wednesday": "Dimecres",
+        "thursday": "Dijous",
+        "friday": "Divendres",
+        "saturday": "Dissabte"
+      },
+      "abbr_month_names": {
+        "january": "Gen",
+        "february": "Feb",
+        "march": "Mar",
+        "april": "Abr",
+        "may": "Mai",
+        "june": "Jun",
+        "july": "Jul",
+        "august": "Ago",
+        "september": "Set",
+        "october": "Oct",
+        "november": "Nov",
+        "december": "Des"
+      },
+      "month_names": {
+        "january": "Gener",
+        "february": "Febrer",
+        "march": "Març",
+        "april": "Abril",
+        "may": "Maig",
+        "june": "Juny",
+        "july": "Juliol",
+        "august": "Agost",
+        "september": "Setembre",
+        "october": "Octubre",
+        "november": "Novembre",
+        "december": "Desembre"
+      },
+      "am": "am",
+      "pm": "pm"
+    },
+    "attributes": {
+      "password": "contrasenya",
+      "first_name": "Nom",
+      "last_name": "Cognoms",
+      "body": "Assumpte",
+      "email": "email",
+      "password_confirmation": "Confirmació de la contrasenya"
+    },
+    "addresses": {
+      "zip_code": "Codi postal",
+      "postal_code": "Codi postal",
+      "postcode": "Codi postal",
+      "province": "Provincia",
+      "state": "Estat",
+      "state_and_territory": "Estat\/Territori",
+      "confirm": "Estas segur que vols esborrar l'adreça?",
+      "pincode": "Codi pin",
+      "region": "Regió",
+      "prefecture": "Prefactura",
+      "county": "Comptat"
+    },
+    "checkout": {
+      "general": {
+        "back_to_cart": "Torna a la cistella",
+        "back_to_contact_information": "Torna a la informació de client",
+        "back_to_shipping_method": "Torna al mètode d'enviament",
+        "back_to_payment_method": "Torna als mètodes de pagament",
+        "autocomplete_selection": "{{number}} de {{total}}",
+        "continue_button_label": "Continua",
+        "continue_to_shipping_method": "Continua al mètode d'enviament",
+        "continue_to_payment_method": "Continua al mètode de pagament",
+        "continue_to_review": "Revisar comanda"
+      },
+      "stock": {
+        "go_back_to_cart_button_label": "Torna a la meva cistella",
+        "continue_shopping_button_label": "Continua"
+      },
+      "order_summary": {
+        "total_label": "Total",
+        "partial_total_label": "Total",
+        "free_total_label": "Gratuït"
+      }
+    }
+  },
+  "homepage": {
+    "onboarding": {
+      "product_title": "El vostre producte",
+      "collection_title": "La vostra col·lecció",
+      "blog_title": "El títol de l'entrada al blog"
+    }
   }
 }
