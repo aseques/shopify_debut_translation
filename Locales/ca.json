@@ -3,7 +3,8 @@
     "404": {
       "title": "Pàgina no trobada",
       "subText": "Ho sentim, no vam poder trobar aquesta pàgina.",
-      "subtext": "Disculpa, pero no trobem aquesta pàgina."
+      "subtext": "Disculpa, pero no trobem aquesta pàgina.",
+      "link": "Continuar comprant"
     },
     "password_page": {
       "opening_soon": "Obertura Pròximament",
@@ -19,7 +20,7 @@
       "signup_form_success": "Et enviarem un correu electrònic abans d'inaugurar!",
       "admin_link_html": "Ets el propietari de la botiga? <a href=\"\/admin\" class=\"text-link\"> Registra't aquí <\/a>",
       "password_link": "Entrar usant contrasenya",
-      "powered_by_shopify_html": "Aquesta botiga estarà impulsada per {{ Shopify }} Traducció per: Connexio.cat"
+      "powered_by_shopify_html": "Aquesta botiga funciona amb {{ shopify }}"
     },
     "pagination": {
       "previous": "Anterior",
@@ -82,6 +83,9 @@
       "copyright": "Drets d'autor",
       "social": "{{ shop }} en {{ social_media }}",
       "news": "{{ shop }} notícies"
+    },
+    "navigation": {
+      "search": "Cerca"
     }
   },
   "collections": {
@@ -91,7 +95,9 @@
       "items_with_count": {
         "one": "{{ count }} producte",
         "other": "{{ count }} productes"
-      }
+      },
+      "view_all": "Veure-ho tot",
+      "view_all_label": "Veure tots els productes de la col·lecció  {{ collection_name }}"
     },
     "product_item": {
       "from_text_html": "<em> De <\/em> {{ price }}"
@@ -127,7 +133,9 @@
       "add_to_cart": "Afegeix a la cistella",
       "sale": "Oferta",
       "back_to_collection": "Torna a {{ title }} ",
-      "include_taxes": "Impostos inclosos."
+      "include_taxes": "Impostos inclosos.",
+      "on_sale": "Oferta",
+      "sale_price": "Preu oferta"
     },
     "onboarding": {
       "title": "Aquesta pàgina us mostrarà tots els productes de la seva botiga",
@@ -183,7 +191,7 @@
       "taxes_extra": "Els codis de descompte, els costos d'enviament i els impostos s'afegeixen durant el pagament.",
       "update": "Actualitzar",
       "checkout": "Finalitzar comanda",
-      "empty": "La seva cistella actualment està buit.",
+      "empty": "La seva cistella actualment està buida.",
       "note": "Afegir notes o instruccions a la comanda...",
       "savings": "Esteu guardant",
       "taxes_included_but_shipping_at_checkout": "Impostos inclosos i calculats al finalitzar la compra",
@@ -348,7 +356,13 @@
   "blogs": {
     "article": {
       "posted_on_date": "Publicat el {{ date }} ",
-      "comment_meta_html": "<strong>{{ author }}<\/strong> el {{ date }} "
+      "comment_meta_html": "<strong>{{ author }}<\/strong> el {{ date }} ",
+      "view_all": "Veure-ho tot",
+      "view_all_blogs": "Veure tots els blogs",
+      "read_more": "Llegeix més",
+      "read_more_title": "Llegeix més: {{ title }}",
+      "by_author": "per {{ author }}",
+      "back_to_blog": "Tornar a {{ title }}"
     },
     "comments": {
       "title": "Comentaris",
@@ -470,7 +484,14 @@
         "continue_button_label": "Continua",
         "continue_to_shipping_method": "Continua al mètode d'enviament",
         "continue_to_payment_method": "Continua al mètode de pagament",
-        "continue_to_review": "Revisar comanda"
+        "continue_to_review": "Revisar comanda",
+        "edit_link_label": "Edita",
+        "print_policies_link_label": "Imprimeix",
+        "cart": "Cistella",
+        "close_modal_label": "Tancar",
+        "close_notice_label": "Tancar",
+        "edit_shipping_address": "Editar adreça d'entrega",
+        "edit_contact_information": "Editar informació de client"
       },
       "stock": {
         "go_back_to_cart_button_label": "Torna a la meva cistella",
@@ -480,7 +501,26 @@
         "total_label": "Total",
         "partial_total_label": "Total",
         "free_total_label": "Gratuït"
+      },
+      "customer_account": {
+        "sign_in_link_label": "Entra",
+        "sign_out_link_label": "Surt"
       }
+    },
+    "notices": {
+      "cart": {
+        "link_expired": "Enllaç caducat",
+        "link_no_longer_exists": "L'enllaç ja no existeix."
+      }
+    },
+    "page_titles": {
+      "search": "Cerca"
+    },
+    "errors": {
+      "blank": "no pot ser buit",
+      "empty": "no pot ser buit",
+      "expired": "ha caducat",
+      "invalid_expiry_year": "no és un any de caducitat vàlid"
     }
   },
   "homepage": {
@@ -489,5 +529,8 @@
       "collection_title": "La vostra col·lecció",
       "blog_title": "El títol de l'entrada al blog"
     }
+  },
+  "date_formats": {
+    "month_day_year": "%B %d, %Y"
   }
 }
