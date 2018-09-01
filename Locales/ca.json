@@ -86,6 +86,12 @@
     },
     "navigation": {
       "search": "Cerca"
+    },
+    "cart": {
+      "items_count": {
+        "one": "Element",
+        "other": "Elements"
+      }
     }
   },
   "collections": {
@@ -115,6 +121,9 @@
       "price_descending": "Preu, més a menys",
       "date_descending": "Data, nou a antic",
       "date_ascending": "Data, antic a nou"
+    },
+    "filters": {
+      "all_tags": "Tots els productes"
     }
   },
   "products": {
@@ -135,7 +144,10 @@
       "back_to_collection": "Torna a {{ title }} ",
       "include_taxes": "Impostos inclosos.",
       "on_sale": "Oferta",
-      "sale_price": "Preu oferta"
+      "sale_price": "Preu oferta",
+      "regular_price": "Preu normal",
+      "sold_out": "Esgotat",
+      "unavailable": "No disponible"
     },
     "onboarding": {
       "title": "Aquesta pàgina us mostrarà tots els productes de la seva botiga",
@@ -196,7 +208,8 @@
       "savings": "Esteu guardant",
       "taxes_included_but_shipping_at_checkout": "Impostos inclosos i calculats al finalitzar la compra",
       "taxes_included_and_shipping_policy_html": "Impostos inclosos, <a href=\"{{ link }}\">Enviament calculat<\/a> al finalitzar la compra",
-      "continue_shopping": "Continua comprant"
+      "continue_shopping": "Continua comprant",
+      "edit": "Editar"
     },
     "label": {
       "product": "Producte",
@@ -284,7 +297,8 @@
       "cancel": "Cancel",
       "edit": "Edita",
       "delete": "Eliminar",
-      "address1": "Adreça1"
+      "address1": "Adreça1",
+      "edit_address": "Editar adreça"
     },
     "login": {
       "title": "Entrada",
@@ -309,7 +323,7 @@
     },
     "order": {
       "title": "Comanda {{ name }}",
-      "cancelled": "Comanda cancel·lat",
+      "cancelled": "Comanda cancel·lada",
       "cancelled_reason": "Motiu: {{ reason }}",
       "billing_address": "Adreça de facturació",
       "payment_status": "Estat del pagament",
@@ -451,11 +465,17 @@
         "december": "Desembre"
       },
       "am": "am",
-      "pm": "pm"
+      "pm": "pm",
+      "formats": {
+        "month_day": "%B %-d",
+        "short": "%d %b %H:%M",
+        "long": "%B %d, %Y %H:%M",
+        "default": "%a, %d %b %Y %H:%M:%S %z"
+      }
     },
     "attributes": {
       "password": "contrasenya",
-      "first_name": "Nom",
+      "first_name": "nom",
       "last_name": "Cognoms",
       "body": "Assumpte",
       "email": "email",
@@ -491,26 +511,158 @@
         "close_modal_label": "Tancar",
         "close_notice_label": "Tancar",
         "edit_shipping_address": "Editar adreça d'entrega",
-        "edit_contact_information": "Editar informació de client"
+        "edit_contact_information": "Editar informació de client",
+        "autocomplete_single_item": "1 element disponible",
+        "edit_shipping_method": "Editar mètode d'enviament",
+        "edit_payment_method": "Editar mètode de pagament",
+        "edit_billing_address": "Editar adreça d'enviament",
+        "choose_payment_method": "Trieu un mètode de pagament"
       },
       "stock": {
         "go_back_to_cart_button_label": "Torna a la meva cistella",
-        "continue_shopping_button_label": "Continua"
+        "continue_shopping_button_label": "Continua",
+        "product_column_header": "Productes",
+        "remove_from_cart_button_label": "Treure de la cistella",
+        "page_title": "Incidències amb l'inventari",
+        "title": "Sense stock",
+        "quantity_column_header": "Quantita",
+        "price_column_header": "Preu",
+        "status_column_header": "Estat",
+        "removed_from_cart_notice": "Tret de la cistella",
+        "sold_out_label": "Esgotat",
+        "reduced_label": "Reduït",
+        "reduced_with_quantity_label": "Només en queden {{ quantity_available }"
       },
       "order_summary": {
         "total_label": "Total",
         "partial_total_label": "Total",
-        "free_total_label": "Gratuït"
+        "free_total_label": "Gratuït",
+        "title": "Resum de la comanda",
+        "order_name_label": "Comanda {{ name }}",
+        "shopping_cart_label": "Cistella",
+        "discount_title": "Descompte",
+        "discount_label": "Descompte",
+        "discount_placeholder": "Descompte",
+        "gift_card_title": "Targeta regal",
+        "gift_card_label": "Targeta regal",
+        "gift_card_placeholder": "Targeta regal",
+        "free_shipping_discount_label": "Enviament gratuït",
+        "shipping_label": "Enviament",
+        "shipping_pending_value": "—",
+        "shipping_policy_link": "Despeses d'enviament",
+        "vat_label_html": "Incloent {{ amount }} en impostos"
       },
       "customer_account": {
         "sign_in_link_label": "Entra",
-        "sign_out_link_label": "Surt"
+        "sign_out_link_label": "Surt",
+        "not_user_label": "No sou {{ first_name }}?",
+        "have_an_account_label": "Ja teniu un compte?",
+        "save_my_information_label": "Guardeu aquesta informació per la pròxima vegada"
+      },
+      "thank_you": {
+        "cancelled_page_title": "Comanda anul·lat",
+        "cancelled_title": "La vostra comanda s'ha anul·lat",
+        "cancelled_description": "La vostra comanda s'ha anul·lat el {{ date }}. Contacteu amb nosaltres per qualsevol pregunta.",
+        "shipping_address_title": "Adreça d'enviament",
+        "marker": {
+          "shipping": "Adreça d'enviament"
+        },
+        "payment_method_title": "Mètode de pagament",
+        "customer_information_title": "Informació de contacte",
+        "payment_information_title": "Informació de pagament",
+        "shipping_information_title": "Informació d'enviament"
+      },
+      "payment": {
+        "no_js_credit_card_fields_redirect_hint": "Us redirigirem a la passarel·la de pagament per afegir la vostra informació de pagament.",
+        "missing_credit_card_error": "No es pot fer el pagament sense una targeta de crèdit.",
+        "billing_address_title": "Adreça de facturació",
+        "card_fields_unavailable_html": {
+          "one": "Ara mateix no es poden fer pagaments amb targetes de crèdit i dèbit. <br><a href=\"javascript:window.location.reload();\">refresqueu la pàgina<\/a> o proveu-ho més tard.",
+          "other": "Ara mateix no es poden fer pagaments amb targetes de crèdit i dèbit. <br><a href=\"javascript:window.location.reload();\">refresqueu la pàgina<\/a> o prove un altre mètode de pagament."
+        },
+        "sofort_label": "SOFORT",
+        "same_billing_address_label": "Igual que l'adreça d'enviament",
+        "title": "Mètode de pagament"
+      },
+      "payment_summary": {
+        "credit_card_expires_on_notice": "Caduca el {{ month }}\/{{ year }}"
+      },
+      "field_errors": {
+        "credit_card_name_blank": "Entreu el vostre nom tal com apareix a la targeta",
+        "credit_card_name_invalid": "Entreu el vostre nom tal com apareix a la targeta",
+        "credit_card_number_invalid": "Entreu un número de targeta de crèdit vàlid",
+        "credit_card_expiry_invalid": "Entreu una data de caducitat vàlida",
+        "credit_card_month_invalid": "Entreu un mes de caducitat vàlid",
+        "credit_card_year_invalid": "Entreu un any de caducitat vàlid",
+        "credit_card_start_invalid": "Entreu una data d'inici vàlida",
+        "credit_card_start_month_invalid": "Entreu un més d'inici vàlid",
+        "credit_card_start_year_invalid": "Entreu un any d'inici vàlid",
+        "credit_card_verification_value_blank": "Entreu el codi CVV"
+      },
+      "payment_gateway": {
+        "credit_card_label": "Targeta de crèdit"
+      },
+      "contact": {
+        "first_name_label": "Nom",
+        "optional_first_name_label": "Nom (opcional)",
+        "first_name_placeholder": "Nom",
+        "optional_first_name_placeholder": "Nom (opcional)",
+        "contact_method_title": "Informació de contacte",
+        "email_label": "Email",
+        "email_placeholder": "Email",
+        "email_or_phone_label": "Email o num. de mòbil",
+        "email_or_phone_placeholder": "Email o num. de mòbil",
+        "stored_addresses_label": "Adreces guardades",
+        "new_address_label": "Nova adreça...",
+        "last_name_label": "Últim nom",
+        "last_name_placeholder": "Últim nom",
+        "company_label": "Empresa",
+        "optional_company_label": "Empresa (opcional)",
+        "company_placeholder": "Empresa",
+        "optional_company_placeholder": "Empresa (opcional)",
+        "address1_label": "Adreça",
+        "address1_placeholder": "Adreça",
+        "address2_label": "Apartament, habitació, etc.",
+        "optional_address2_label": "Apartament, habitació, etc. (opcional)",
+        "address2_placeholder": "Apartament, habitació, etc.",
+        "optional_address2_placeholder": "Apartament, habitació, etc. (opcional)",
+        "city_label": "Ciutat",
+        "city_placeholder": "Ciutat",
+        "country_label": "País",
+        "country_code": "País",
+        "province_label": "Província",
+        "province_placeholder": "Província",
+        "phone_label": "Telèfon",
+        "optional_phone_label": "Telèfon (opcional)",
+        "optional_phone_placeholder": "Telèfon",
+        "phone_placeholder": "Telèfon",
+        "zip_code_placeholder": "Codi postal",
+        "postal_code_placeholder": "Codi postal",
+        "postcode_placeholder": "Codi postal",
+        "pincode_placeholder": "Codi PIN",
+        "shipping_address_title": "Adreça d'enviament",
+        "title": "Informació de contacte"
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Mantingueu-me informat sobre les novetats i ofertes exclusives"
+      },
+      "shipping": {
+        "title": "Mètode d'enviament",
+        "shipping_method_title": "Mètode d'enviament"
+      },
+      "alternative_payment_method_banner": {
+        "or": "OR"
       }
     },
     "notices": {
       "cart": {
         "link_expired": "Enllaç caducat",
         "link_no_longer_exists": "L'enllaç ja no existeix."
+      },
+      "order": {
+        "cancel_reason": {
+          "declined": "Pagament denegat"
+        }
       }
     },
     "page_titles": {
@@ -520,14 +672,25 @@
       "blank": "no pot ser buit",
       "empty": "no pot ser buit",
       "expired": "ha caducat",
-      "invalid_expiry_year": "no és un any de caducitat vàlid"
+      "invalid_expiry_year": "no és un any de caducitat vàlid",
+      "credit_card_session_expired": "L'autorització de la targeta de crèdit ha caducat, entreu de nou la informació de pagament. No s'us ha fet cap càrrec",
+      "invalid_email": "ha de ser una adreça vàlida",
+      "discount_disabled": "Aquest descompte està deshabilitat",
+      "discount_expired": "Aquest descompte ja no és vàlid",
+      "discount_limit_reached": "Aquest descompte ha arribat al seu límit d'ús",
+      "discount_not_found": "No s'ha trobat cap descompte amb aquest codi",
+      "customer_already_used_once_per_customer_discount_notice": "Aquest descompte ha arribat al seu límit d'ús",
+      "gift_card_already_applied": "Codi ja aplicat al finalitzar la compra",
+      "gift_card_code_invalid": "Codi no vàlid",
+      "gift_card_currency_mismatch": "Targetes regal en {{ gift_card_currency }} no es poden aplicar en comandes en {{ checkout_currency }}"
     }
   },
   "homepage": {
     "onboarding": {
       "product_title": "El vostre producte",
       "collection_title": "La vostra col·lecció",
-      "blog_title": "El títol de l'entrada al blog"
+      "blog_title": "El títol de l'entrada al blog",
+      "no_content": "Aquesta secció actualment no inclou cap contingut. Afegiu contingut amb la barra lateral."
     }
   },
   "date_formats": {
