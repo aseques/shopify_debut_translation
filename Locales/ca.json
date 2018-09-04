@@ -59,6 +59,15 @@
       },
       "share_on_twitter": "Comparteix",
       "share_on_pinterest": "Pin it"
+    },
+    "newsletter_form": {
+      "submit": "Subscriure'm"
+    },
+    "accessibility": {
+      "skip_to_content": "Ves al contingut"
+    },
+    "payment": {
+      "method": "Mètodes de pagament"
     }
   },
   "layout": {
@@ -250,7 +259,8 @@
       "send": "Enviar",
       "post_success": "Gràcies per contactar-nos. Li respondrem el més aviat possible.",
       "post_error": "Ups, ho sentim. No vam poder enviar la seva consulta. Si us plau corregiu el següent i torni a enviar:",
-      "post_field_error_html": "El <strong> {{ field }} <\/strong> {{ error }}"
+      "post_field_error_html": "El <strong> {{ field }} <\/strong> {{ error }}",
+      "submit": "Envia"
     },
     "placeholder": {
       "name": "John Doe",
@@ -339,7 +349,7 @@
     },
     "reset_password": {
       "title": "Restablir contrasenya.",
-      "submit": "Restablir contrasenya",
+      "submit": "Restableix contrasenya",
       "password": "Contrasenya",
       "password_confirm": "Confirmar contrasenya"
     },
@@ -349,8 +359,11 @@
       "last_name": "Cognom",
       "email": "Correu electrònic",
       "password": "Contrasenya",
-      "submit": "Crear",
+      "submit": "Crea",
       "cancel": "Tornar a la botiga"
+    },
+    "recover_password": {
+      "submit": "Envia"
     }
   },
   "gift_cards": {
@@ -516,7 +529,9 @@
         "edit_shipping_method": "Editar mètode d'enviament",
         "edit_payment_method": "Editar mètode de pagament",
         "edit_billing_address": "Editar adreça d'enviament",
-        "choose_payment_method": "Trieu un mètode de pagament"
+        "choose_payment_method": "Trieu un mètode de pagament",
+        "choose_shipping_method": "Trieu un mètode d'enviament",
+        "complete_purchase_button_label": "Finalitzar compra"
       },
       "stock": {
         "go_back_to_cart_button_label": "Torna a la meva cistella",
@@ -550,7 +565,8 @@
         "shipping_label": "Enviament",
         "shipping_pending_value": "—",
         "shipping_policy_link": "Despeses d'enviament",
-        "vat_label_html": "Incloent {{ amount }} en impostos"
+        "vat_label_html": "Incloent {{ amount }} en impostos",
+        "shipping_pending_message": "Encara no disponible"
       },
       "customer_account": {
         "sign_in_link_label": "Entra",
@@ -570,7 +586,13 @@
         "payment_method_title": "Mètode de pagament",
         "customer_information_title": "Informació de contacte",
         "payment_information_title": "Informació de pagament",
-        "shipping_information_title": "Informació d'enviament"
+        "shipping_information_title": "Informació d'enviament",
+        "order_updates_submit_subscription": "Envia",
+        "contact_us": "Contacteu-nos",
+        "contact_us_lowercase": "contacteu-nos",
+        "contact_us_html": "Necessiteu ajuda? {{ contact_us }}",
+        "return_to_store_link_label": "Continuar comprant",
+        "non_shippable_title": "La vostra compra s'ha completat"
       },
       "payment": {
         "no_js_credit_card_fields_redirect_hint": "Us redirigirem a la passarel·la de pagament per afegir la vostra informació de pagament.",
@@ -582,7 +604,22 @@
         },
         "sofort_label": "SOFORT",
         "same_billing_address_label": "Igual que l'adreça d'enviament",
-        "title": "Mètode de pagament"
+        "title": "Mètode de pagament",
+        "card_change_label": "Canviar",
+        "card_security_notice": "Totes les transaccions són segures i xifrades",
+        "different_billing_address_label": "Fer servir una adreça de facturació diferent",
+        "card_number_label": "Número de targeta",
+        "card_number_placeholder": "Número de targeta",
+        "name_on_card_label": "Propietari de la targeta",
+        "name_on_card_placeholder": "Propietari de la targeta",
+        "card_expiry_month_placeholder": "MM",
+        "card_expiry_year_placeholder": "AA",
+        "card_expiry_placeholder": "MM \/ AA",
+        "card_verification_value_placeholder": "CVV",
+        "card_start_month_placeholder": "MM",
+        "card_start_year_placeholder": "AA",
+        "card_start_placeholder": "MM \/ AA",
+        "offsite_gateway_redirect_hint": "Després de clicar a “{{ button_label }}”, us enviarem a {{ gateway_label }} per completar la compra de forma segura."
       },
       "payment_summary": {
         "credit_card_expires_on_notice": "Caduca el {{ month }}\/{{ year }}"
@@ -648,10 +685,40 @@
       },
       "shipping": {
         "title": "Mètode d'enviament",
-        "shipping_method_title": "Mètode d'enviament"
+        "shipping_method_title": "Mètode d'enviament",
+        "free_rate_label": "Gratuït",
+        "cheapest_rate_label": "Més barat"
       },
       "alternative_payment_method_banner": {
         "or": "OR"
+      },
+      "review": {
+        "blocks": {
+          "contact_method_title": "Contacte",
+          "change_contact_method_link_label": "Canviar informació de contacte",
+          "shipping_address_title": "Enviar a",
+          "shipping_method_title": "Mètode",
+          "payment_method_title": "Pagament",
+          "change_shipping_method_link_label": "Canviar el mètode d'enviament",
+          "change_payment_method_link_label": "Canviar el mètode de pagament"
+        }
+      },
+      "remember_me": {
+        "modal": {
+          "errors": {
+            "shipping_address": {
+              "title": "No podem fer enviaments a la vostra zona"
+            },
+            "code_not_received": {
+              "payment_information_step": {
+                "link": "Entreu dades de la targeta"
+              }
+            }
+          }
+        }
+      },
+      "payment_errors": {
+        "rejected_transaction": "El proveïdor de pagament ha rebutjat la transacció. Torneu-ho a provar."
       }
     },
     "notices": {
@@ -662,6 +729,15 @@
       "order": {
         "cancel_reason": {
           "declined": "Pagament denegat"
+        },
+        "transaction_status": {
+          "pending": "Pendent",
+          "failure": "Fallida",
+          "error": "Error",
+          "success": "Correcta"
+        },
+        "fulfillment_status": {
+          "complete": "Completa"
         }
       }
     },
@@ -682,7 +758,11 @@
       "customer_already_used_once_per_customer_discount_notice": "Aquest descompte ha arribat al seu límit d'ús",
       "gift_card_already_applied": "Codi ja aplicat al finalitzar la compra",
       "gift_card_code_invalid": "Codi no vàlid",
-      "gift_card_currency_mismatch": "Targetes regal en {{ gift_card_currency }} no es poden aplicar en comandes en {{ checkout_currency }}"
+      "gift_card_currency_mismatch": "Targetes regal en {{ gift_card_currency }} no es poden aplicar en comandes en {{ checkout_currency }}",
+      "invalid_start_date_or_issue_number_for_debit": "cal un data d'inici o entrega vàlida"
+    },
+    "challenge": {
+      "submit_button_text": "Envia"
     }
   },
   "homepage": {
