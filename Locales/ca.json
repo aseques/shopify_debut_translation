@@ -1,9 +1,9 @@
 {
   "general": {
     "404": {
-      "title": "Pàgina no trobada",
+      "title": "404 Pàgina no trobada",
       "subText": "Ho sentim, no vam poder trobar aquesta pàgina.",
-      "subtext": "Disculpa, pero no trobem aquesta pàgina.",
+      "subtext": "La pàgina que heu demanat no existeix.",
       "link": "Continuar comprant"
     },
     "password_page": {
@@ -35,7 +35,7 @@
     "search": {
       "placeholder": "Busqueu a la nostra botiga",
       "no_results_title": "Recerca sense resultats",
-      "no_results_html": "La seva recerca de <strong> {{ search }} <\/strong> no ha tingut resultats. Proveu de cercar una altra cosa.",
+      "no_results_html": "La vostra recerca de <strong> {{ search }} <\/strong> no ha tingut resultats. Proveu de cercar una altra cosa.",
       "results_title": "Resultats de la cerca",
       "empty_search_message": "La cerca no pot ser buida",
       "title": "Cerqueu a la nostra web",
@@ -44,11 +44,16 @@
       "heading": {
         "one": "Resultat de la cerca",
         "other": "Resultats de la cerca"
+      },
+      "results_with_count": {
+        "one": "{{ count }} resultat per \"{{ terms }}\"",
+        "other": "{{ count }} resultats per \"{{ terms }}\" "
       }
     },
     "meta": {
       "tagged": "etiquetat",
-      "page": "Pàgina"
+      "page": "Pàgina {{ page }}",
+      "tags": "Etiquetat \"{{ tags }}\""
     },
     "social": {
       "share_on_facebook": "Comparteix",
@@ -61,13 +66,26 @@
       "share_on_pinterest": "Pin it"
     },
     "newsletter_form": {
-      "submit": "Subscriure'm"
+      "submit": "Subscriure'm",
+      "newsletter_email": "Uniu-vos a la llista de correu",
+      "email_placeholder": "Adreça d'email",
+      "confirmation": "Gracies per subscriure-us"
     },
     "accessibility": {
-      "skip_to_content": "Ves al contingut"
+      "skip_to_content": "Ves al contingut",
+      "close_modal": "Tancar (esc)",
+      "link_messages": {
+        "new_window": "Obre una nova finestra.",
+        "external": "Obre una web externa.",
+        "new_window_and_external": "Obre una web externa en una nova finestra."
+      }
     },
     "payment": {
       "method": "Mètodes de pagament"
+    },
+    "filters": {
+      "show_more": "Mostra més",
+      "show_less": "Mostra menys"
     }
   },
   "layout": {
@@ -203,7 +221,7 @@
   },
   "cart": {
     "general": {
-      "title": "La seva cistella",
+      "title": "La vostra cistella",
       "remove": "Treure",
       "noti": "Afegir instruccions especials a la seva comanda ...",
       "subtotal": "Subtotal",
@@ -212,7 +230,7 @@
       "taxes_extra": "Els codis de descompte, els costos d'enviament i els impostos s'afegeixen durant el pagament.",
       "update": "Actualitzar",
       "checkout": "Finalitzar comanda",
-      "empty": "La seva cistella actualment està buida.",
+      "empty": "La vostra cistella actualment està buida.",
       "note": "Afegir notes o instruccions a la comanda...",
       "savings": "Esteu guardant",
       "taxes_included_but_shipping_at_checkout": "Impostos inclosos i calculats al finalitzar la compra",
@@ -389,7 +407,10 @@
       "read_more": "Llegeix més",
       "read_more_title": "Llegeix més: {{ title }}",
       "by_author": "per {{ author }}",
-      "back_to_blog": "Tornar a {{ title }}"
+      "back_to_blog": "Tornar a {{ title }}",
+      "all_topics": "Tots els temes",
+      "posted_in": "Penjat a",
+      "tags": "Etiquetes"
     },
     "comments": {
       "title": "Comentaris",
@@ -531,7 +552,11 @@
         "edit_billing_address": "Editar adreça d'enviament",
         "choose_payment_method": "Trieu un mètode de pagament",
         "choose_shipping_method": "Trieu un mètode d'enviament",
-        "complete_purchase_button_label": "Finalitzar compra"
+        "complete_purchase_button_label": "Finalitzar compra",
+        "page_title": "Finalitzar compra",
+        "skip_to_content": "Anar al contingut",
+        "authenticate_purchase_button_label": "Autenticar pagament",
+        "all_rights_reserved": "Tots els drets reservats {{ shop_name }}"
       },
       "stock": {
         "go_back_to_cart_button_label": "Torna a la meva cistella",
@@ -566,7 +591,11 @@
         "shipping_pending_value": "—",
         "shipping_policy_link": "Despeses d'enviament",
         "vat_label_html": "Incloent {{ amount }} en impostos",
-        "shipping_pending_message": "Encara no disponible"
+        "shipping_pending_message": "Encara no disponible",
+        "price_label": "Preu",
+        "quantity_label": "Quantitat",
+        "product_image_label": "Imatge del producte",
+        "description_label": "Descripció"
       },
       "customer_account": {
         "sign_in_link_label": "Entra",
@@ -576,7 +605,7 @@
         "save_my_information_label": "Guardeu aquesta informació per la pròxima vegada"
       },
       "thank_you": {
-        "cancelled_page_title": "Comanda anul·lat",
+        "cancelled_page_title": "Comanda anul·lada",
         "cancelled_title": "La vostra comanda s'ha anul·lat",
         "cancelled_description": "La vostra comanda s'ha anul·lat el {{ date }}. Contacteu amb nosaltres per qualsevol pregunta.",
         "shipping_address_title": "Adreça d'enviament",
@@ -592,7 +621,9 @@
         "contact_us_lowercase": "contacteu-nos",
         "contact_us_html": "Necessiteu ajuda? {{ contact_us }}",
         "return_to_store_link_label": "Continuar comprant",
-        "non_shippable_title": "La vostra compra s'ha completat"
+        "non_shippable_title": "La vostra compra s'ha completat",
+        "page_title": "Gracies {{ display_name }}!",
+        "page_title_no_name": "Gracies!"
       },
       "payment": {
         "no_js_credit_card_fields_redirect_hint": "Us redirigirem a la passarel·la de pagament per afegir la vostra informació de pagament.",
@@ -678,7 +709,9 @@
         "postcode_placeholder": "Codi postal",
         "pincode_placeholder": "Codi PIN",
         "shipping_address_title": "Adreça d'enviament",
-        "title": "Informació de contacte"
+        "title": "Informació de contacte",
+        "address_title": "Adreça",
+        "country_placeholder": "País"
       },
       "marketing": {
         "accept_marketing_checkbox_label": "Mantingueu-me informat sobre les novetats i ofertes exclusives"
@@ -700,7 +733,20 @@
           "shipping_method_title": "Mètode",
           "payment_method_title": "Pagament",
           "change_shipping_method_link_label": "Canviar el mètode d'enviament",
-          "change_payment_method_link_label": "Canviar el mètode de pagament"
+          "change_payment_method_link_label": "Canviar el mètode de pagament",
+          "billing_address_title": "Facturació",
+          "change_link_label": "Canviar",
+          "change_billing_address_link_label": "Canviar l'adreça de facturació",
+          "change_shipping_address_link_label": "Canviar l'adreça d'enviament"
+        },
+        "title": "Revisar comanda",
+        "checkout_as_guest": "Finalizar com a convidat",
+        "credit_card": {
+          "description": "acabant en {{ lastDigits }}",
+          "expiration": "caduca {{ date }}",
+          "edit_billing": "Editar facturació",
+          "add": "Afegir nova targeta",
+          "expired": "Caducada"
         }
       },
       "remember_me": {
@@ -719,6 +765,10 @@
       },
       "payment_errors": {
         "rejected_transaction": "El proveïdor de pagament ha rebutjat la transacció. Torneu-ho a provar."
+      },
+      "processing": {
+        "redirecting_page_title": "Redirigint...",
+        "page_title": "Processant comanda"
       }
     },
     "notices": {
@@ -742,7 +792,9 @@
       }
     },
     "page_titles": {
-      "search": "Cerca"
+      "search": "Cerca",
+      "products": "Productes",
+      "shopping_cart": "La vostra cistella"
     },
     "errors": {
       "blank": "no pot ser buit",
