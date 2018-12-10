@@ -556,7 +556,8 @@
         "page_title": "Finalitzar compra",
         "skip_to_content": "Anar al contingut",
         "authenticate_purchase_button_label": "Autenticar pagament",
-        "all_rights_reserved": "Tots els drets reservats {{ shop_name }}"
+        "all_rights_reserved": "Tots els drets reservats {{ shop_name }}",
+        "choose_billing_address": "Tria una adreça de facturació"
       },
       "stock": {
         "go_back_to_cart_button_label": "Torna a la meva cistella",
@@ -623,7 +624,8 @@
         "return_to_store_link_label": "Continuar comprant",
         "non_shippable_title": "La vostra compra s'ha completat",
         "page_title": "Gracies {{ display_name }}!",
-        "page_title_no_name": "Gracies!"
+        "page_title_no_name": "Gracies!",
+        "billing_address_title": "Adreça de facturació"
       },
       "payment": {
         "no_js_credit_card_fields_redirect_hint": "Us redirigirem a la passarel·la de pagament per afegir la vostra informació de pagament.",
@@ -653,7 +655,8 @@
         "offsite_gateway_redirect_hint": "Després de clicar a “{{ button_label }}”, us enviarem a {{ gateway_label }} per completar la compra de forma segura."
       },
       "payment_summary": {
-        "credit_card_expires_on_notice": "Caduca el {{ month }}\/{{ year }}"
+        "credit_card_expires_on_notice": "Caduca el {{ month }}\/{{ year }}",
+        "billing_address_title": "Adreça de facturació"
       },
       "field_errors": {
         "credit_card_name_blank": "Entreu el vostre nom tal com apareix a la targeta",
@@ -665,7 +668,20 @@
         "credit_card_start_invalid": "Entreu una data d'inici vàlida",
         "credit_card_start_month_invalid": "Entreu un més d'inici vàlid",
         "credit_card_start_year_invalid": "Entreu un any d'inici vàlid",
-        "credit_card_verification_value_blank": "Entreu el codi CVV"
+        "credit_card_verification_value_blank": "Entreu el codi CVV",
+        "handle_email_invalid": "Entreu una adreça d'email vàlida",
+        "email_invalid": "Entreu una adreça d'email vàlida",
+        "address_first_name_blank": "Entreu el vostre nom",
+        "address_last_name_blank": "Entreu el vostre cognom",
+        "address_address1_blank": "Entreu la vostra adreça",
+        "address_address2_blank": "Entreu el vostre apartament, habitació, etc",
+        "address_city_blank": "Entreu la vostra ciutat",
+        "address_country_blank": "Entreu el vostre país",
+        "address_province_blank": "Trieu el vostre estat \/ província",
+        "address_company_blank": "Entreu el nom de l'empresa",
+        "address_phone_blank": "Entreu un telèfon vàlid",
+        "address_zip_blank": "Entreu el codi postal",
+        "address_zip_invalid_for_country": "Entreu un codi postal valid per {{ country }}"
       },
       "payment_gateway": {
         "credit_card_label": "Targeta de crèdit"
@@ -759,6 +775,9 @@
               "payment_information_step": {
                 "link": "Entreu dades de la targeta"
               }
+            },
+            "throttle": {
+              "title": "Límit d'intents sobrepassat"
             }
           }
         }
@@ -788,13 +807,28 @@
         },
         "fulfillment_status": {
           "complete": "Completa"
+        },
+        "financial_status": {
+          "authorized": "Autoritzat"
         }
+      },
+      "address": {
+        "error_updating": "Error actualitzant l'adreça",
+        "error_creating": "Error creant l'adreça",
+        "error_deleting": "Error esborrant l'adreça",
+        "updated": "Adreça actualitzada correctament",
+        "created": "Adreça creada correctament",
+        "deleted": "Adreaça esborrada correctament"
+      },
+      "customer": {
+        "password_reset_error": "Error de reinicii de contrasenya"
       }
     },
     "page_titles": {
       "search": "Cerca",
       "products": "Productes",
-      "shopping_cart": "La vostra cistella"
+      "shopping_cart": "La vostra cistella",
+      "addresses": "Adreces"
     },
     "errors": {
       "blank": "no pot ser buit",
@@ -822,10 +856,19 @@
       "product_title": "El vostre producte",
       "collection_title": "La vostra col·lecció",
       "blog_title": "El títol de l'entrada al blog",
-      "no_content": "Aquesta secció actualment no inclou cap contingut. Afegiu contingut amb la barra lateral."
+      "no_content": "Aquesta secció actualment no inclou cap contingut. Afegiu contingut amb la barra lateral.",
+      "blog_author": "Nom de l'autor"
     }
   },
   "date_formats": {
     "month_day_year": "%B %d, %Y"
+  },
+  "sections": {
+    "map": {
+      "address_error": "Error ubicant l'adreça",
+      "address_no_results": "Sense resultats per aquesta adreça",
+      "address_query_limit_html": "Heu excedit la API d'ús de google. Considereu actualitzar a un <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Pla Premium<\/a>. ",
+      "auth_error_html": "Hi ha hagut un problema autenticant el vostre compte de Google Maps."
+    }
   }
 }
